@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AppointmentDialog</class>
+ <widget class="QDialog" name="AppointmentDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>مدیریت نوبت</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_patient">
+     <property name="text">
+      <string>بیمار:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBox_patient">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_doctor">
+     <property name="text">
+      <string>پزشک:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="comboBox_doctor">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_appointmentDate">
+     <property name="text">
+      <string>تاریخ نوبت:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDateEdit" name="dateEdit_appointmentDate">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_appointmentTime">
+     <property name="text">
+      <string>ساعت نوبت:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QTimeEdit" name="timeEdit_appointmentTime">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_status">
+     <property name="text">
+      <string>وضعیت:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QComboBox" name="comboBox_status">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>فعال</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>انجام شده</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>لغو شده</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>به تعویق افتاده</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_notes">
+     <property name="text">
+      <string>یادداشت:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QTextEdit" name="textEdit_notes">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="placeholderText">
+      <string>یادداشت‌های مربوط به نوبت...</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AppointmentDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AppointmentDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DoctorDialog</class>
+ <widget class="QDialog" name="DoctorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>مدیریت پزشک</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_firstName">
+     <property name="text">
+      <string>نام:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEdit_firstName">
+     <property name="placeholderText">
+      <string>نام پزشک را وارد کنید</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_lastName">
+     <property name="text">
+      <string>نام خانوادگی:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_lastName">
+     <property name="placeholderText">
+      <string>نام خانوادگی پزشک را وارد کنید</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_specialty">
+     <property name="text">
+      <string>تخصص:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEdit_specialty">
+     <property name="placeholderText">
+      <string>تخصص پزشک (مثل: قلب، مغز و اعصاب)</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_phone">
+     <property name="text">
+      <string>تلفن:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="lineEdit_phone">
+     <property name="placeholderText">
+      <string>شماره تلفن</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_email">
+     <property name="text">
+      <string>ایمیل:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="lineEdit_email">
+     <property name="placeholderText">
+      <string>آدرس ایمیل</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_licenseNumber">
+     <property name="text">
+      <string>شماره نظام پزشکی:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="lineEdit_licenseNumber">
+     <property name="placeholderText">
+      <string>شماره نظام پزشکی</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_officeNumber">
+     <property name="text">
+      <string>شماره اتاق:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLineEdit" name="lineEdit_officeNumber">
+     <property name="placeholderText">
+      <string>شماره اتاق یا مطب</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_consultationFee">
+     <property name="text">
+      <string>هزینه ویزیت:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_consultationFee">
+     <property name="suffix">
+      <string> تومان</string>
+     </property>
+     <property name="maximum">
+      <double>10000000.000000000000000</double>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DoctorDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DoctorDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

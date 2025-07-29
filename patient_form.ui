@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PatientDialog</class>
+ <widget class="QDialog" name="PatientDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>مدیریت بیمار</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_firstName">
+     <property name="text">
+      <string>نام:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEdit_firstName">
+     <property name="placeholderText">
+      <string>نام بیمار را وارد کنید</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_lastName">
+     <property name="text">
+      <string>نام خانوادگی:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_lastName">
+     <property name="placeholderText">
+      <string>نام خانوادگی بیمار را وارد کنید</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_nationalId">
+     <property name="text">
+      <string>کد ملی:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEdit_nationalId">
+     <property name="maxLength">
+      <number>10</number>
+     </property>
+     <property name="placeholderText">
+      <string>کد ملی 10 رقمی</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_birthDate">
+     <property name="text">
+      <string>تاریخ تولد:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QDateEdit" name="dateEdit_birthDate">
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_phone">
+     <property name="text">
+      <string>تلفن:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="lineEdit_phone">
+     <property name="placeholderText">
+      <string>شماره تلفن</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_address">
+     <property name="text">
+      <string>آدرس:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QTextEdit" name="textEdit_address">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="placeholderText">
+      <string>آدرس کامل</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_emergencyContact">
+     <property name="text">
+      <string>تماس اضطراری:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLineEdit" name="lineEdit_emergencyContact">
+     <property name="placeholderText">
+      <string>شماره تماس اضطراری</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_bloodType">
+     <property name="text">
+      <string>گروه خون:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QComboBox" name="comboBox_bloodType">
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>انتخاب کنید</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A+</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A-</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>B+</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>B-</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AB+</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AB-</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>O+</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>O-</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_allergies">
+     <property name="text">
+      <string>آلرژی‌ها:</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #2c3e50;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QTextEdit" name="textEdit_allergies">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="placeholderText">
+      <string>آلرژی‌های بیمار (در صورت وجود)</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 8px; border: 2px solid #ddd; border-radius: 4px; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>PatientDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>PatientDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
